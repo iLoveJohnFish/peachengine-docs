@@ -1,0 +1,52 @@
+# Configuration file for C++ project
+
+project_name: Peach Engine
+version: 0.0.01
+author: Ranyodh Singh Mandur
+description: >
+  A python game engine coded in c++
+
+# Compiler and build settings
+compiler:
+  type: MSVC  # Example compiler choice
+  options:
+    - -c++20
+
+# Directories
+directories:
+  source: src       # Source code directory
+  include: include  # Header files directory
+  build: build      # Build output directory
+  tests: tests    # Asset files directory
+
+# Dependencies
+dependencies:
+  - bgfx: 20230216     # Example dependency with version
+  - sdl: 2.30.4
+  - openal: 1.23.1
+  - stb: 20240213
+  - spdlog: 1.14.1
+  - box2d: 2.4.1
+  - entt: 3.13.0
+  - imgui: 1.89.2
+  - pybind11: 2.12.0
+  - sol2: 3.3.1
+  - nlohmann_json: 3.11.3
+
+# Additional settings
+settings:
+  - debug_mode: true   # Set to false for release builds
+  - optimization_level: 3  # Optimization level (0-3)
+
+# Scripts or build commands
+scripts:
+  - build: premake5
+  - test: N/A
+  - clean: N/A
+
+# Licensing
+license: MIT
+
+# Contact information
+contact:
+  email: 1337minecrafter6969@gmail.com
